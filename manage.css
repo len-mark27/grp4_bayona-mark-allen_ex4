@@ -1,0 +1,70 @@
+body {
+    background-image: url('bg.jpg'); /* Background image behind everything */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white; /* Default text color */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent smoked black background */
+    color: white; /* White text for readability */
+    border: 1px solid white; /* White border */
+    padding: 5px;
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px white; /* Add white glow effect on focus */
+}
+
+fieldset {
+    border: 1px solid white; /* White border for fieldset */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent fieldset background */
+}
+
+.success-message {
+    color: #4CAF50;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input[type="submit"],
+.back-button {
+    background-color: white; /* Solid white background for buttons */
+    color: black; /* Black text on buttons */
+    border: 2px solid white; /* White border */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Optional rounded corners */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition on hover */
+}
+
+input[type="submit"]:hover,
+.back-button:hover {
+    background-color: #ddd; /* Light grey background on hover */
+    color: black; /* Keep black text on hover */
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+}

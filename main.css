@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: white;
+}
+
+.content {
+    display: none;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
+    transform: translateX(100%);
+    z-index: 1;
+}
+
+.content.active {
+    display: block;
+    max-height: 500px;
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 1;
+}
+
+button {
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transform: translate(400px, 0px);
+    color: white;
+    border-radius: 70px;
+    z-index: 10;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: white;
+    background: transparent;
+    transform: translate(30px, 44px);
+    font-size: 36px;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+    border-radius: 100px;
+    transform: translate(90px, -160px);
+}
+
+h2 {
+    transform: translate(800px, 90px);
+}
+
+p {
+    transform: translate(660px, 140px);
+    width: 500px;
+    height: 200px;
+    font-size: 20px;
+}
+
+#fb {
+    background-image: url(fb.png);
+    background-size: cover;
+    transform: translate(500px, -200px);
+    height: 40px;
+    width: 40px;
+    background-position: center;
+}
+
+#insta {
+    background-image: url(insta.png);
+    background-size: cover;
+    transform: translate(510px, -200px);
+    height: 40px;
+    width: 40px;
+    background-position: center;
+}
+
+#github {
+    background-image: url(github.png);
+    background-size: cover;
+    transform: translate(520px, -200px);
+    height: 40px;
+    width: 40px;
+    background-position: center;
+}
+
+.content h3 {
+    transform: translate(670px, 400px);
+}
+.nav{
+    transform: translate(200px,70px);
+}
+.manage{
+    transform: translate(200px,70px);
+}
